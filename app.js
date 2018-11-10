@@ -13,9 +13,9 @@ async function pingServers (host, display) {
         let res = await ping.promise.probe(host.Address, {
             min_reply: 1,
             extra: ["-i 2"],
-            timeout: 10,
+            timeout: 1,
         });
-        if(res.host != 'unknown') {
+        if(res.host != 'unknown' && !isNaN(res.avg) ) {
             result.push({ host: res.host, avg: parseInt(res.avg), city: host.City, country: host.Country });
         }
     });
@@ -33,6 +33,9 @@ function print (display) {
     }
     console.log('  ...')
     console.log(`${result.length}. ${result[result.length-1].avg}ms - ${result[result.length-1].country}, ${result[result.length-1].city} - ${result[result.length-1].host}`)    
+
 }
 
 pingServers(hosts, 6)
+
+
