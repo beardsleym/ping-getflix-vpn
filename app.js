@@ -10,13 +10,13 @@ const result = []
 async function pingServers (host, display) {
     let pingAllServers = hosts.map(async host => {
 
-        let res = await ping.promise.probe(host.Address, {
+        let res = await ping.promise.probe(host.address, {
             min_reply: 1,
             extra: ["-i 2"],
             timeout: 1,
         });
         if(res.host != 'unknown' && !isNaN(res.avg) ) {
-            result.push({ host: res.host, avg: parseInt(res.avg), city: host.City, country: host.Country });
+            result.push({ host: res.host, avg: parseInt(res.avg), city: host.city, country: host.country });
         }
     });
 

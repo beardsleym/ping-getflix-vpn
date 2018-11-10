@@ -1,739 +1,739 @@
 const hosts = [
   {
-    Country: 'Angola',
-    City: 'Ambriz',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ao-am-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'Australia',
-    City: 'Melbourne',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'au-mel-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'Australia',
-    City: 'Newcastle',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'au-nw-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'Australia',
-    City: 'Sydney',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'au-sy.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'Australia',
-    City: 'Sydney 2',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'au-sy2.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'Australia',
-    City: 'Sydney 3',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'au-sy3-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'Australia',
-    City: 'Queensland',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'au-qn-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'Austria',
-    City: 'Vienna',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'at-vn-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'Brazil',
-    City: 'Sao Paulo',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'br-sp-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'Bolivia',
-    City: 'Santa Cruz',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'bo-sc-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'Canada',
-    City: 'Halifax',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ca-hl2-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'Canada',
-    City: 'Montreal',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ca-mr.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'Canada',
-    City: 'Montreal 2',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ca-mr2-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Angola',
+    city: 'Ambriz',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ao-am-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'Australia',
+    city: 'Melbourne',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'au-mel-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'Australia',
+    city: 'Newcastle',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'au-nw-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'Australia',
+    city: 'Sydney',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'au-sy.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
+  },
+  {
+    country: 'Australia',
+    city: 'Sydney 2',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'au-sy2.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
+  },
+  {
+    country: 'Australia',
+    city: 'Sydney 3',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'au-sy3-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'Australia',
+    city: 'Queensland',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'au-qn-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'Austria',
+    city: 'Vienna',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'at-vn-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'Brazil',
+    city: 'Sao Paulo',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'br-sp-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'Bolivia',
+    city: 'Santa Cruz',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'bo-sc-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'Canada',
+    city: 'Halifax',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ca-hl2-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'Canada',
+    city: 'Montreal',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ca-mr.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
+  },
+  {
+    country: 'Canada',
+    city: 'Montreal 2',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ca-mr2-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Canada',
-    City: 'Toronto',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ca-tor2-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Canada',
+    city: 'Toronto',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ca-tor2-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Canada',
-    City: 'Vancouver 2',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ca-vn2-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Canada',
+    city: 'Vancouver 2',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ca-vn2-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'China',
-    City: 'Beijing',
-    Protocols: 'SSTP',
-    Address: 'cn-bj-sstp.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'China',
+    city: 'Beijing',
+    protocols: 'SSTP',
+    address: 'cn-bj-sstp.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Denmark',
-    City: 'Copenhagen',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'dk-cp-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'Denmark',
+    city: 'Copenhagen',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'dk-cp-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Denmark',
-    City: 'Copenhagen',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'dk-cp.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Denmark',
+    city: 'Copenhagen',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'dk-cp.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Denmark',
-    City: 'Copenhagen',
-    Protocols: 'L2TP, SSTP',
-    Address: 'dk-cp-sstp.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Denmark',
+    city: 'Copenhagen',
+    protocols: 'L2TP, SSTP',
+    address: 'dk-cp-sstp.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'France',
-    City: 'Paris',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'fr-pr.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'France',
+    city: 'Paris',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'fr-pr.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'France',
-    City: 'Paris 2',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'fr-pr2-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'France',
+    city: 'Paris 2',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'fr-pr2-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Germany',
-    City: 'Hamburg',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'de-hm-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Germany',
+    city: 'Hamburg',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'de-hm-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Germany',
-    City: 'Nuremberg',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'de-nr.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Germany',
+    city: 'Nuremberg',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'de-nr.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Germany',
-    City: 'Nuremberg',
-    Protocols: 'L2TP, SSTP',
-    Address: 'de-nr-sstp.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Germany',
+    city: 'Nuremberg',
+    protocols: 'L2TP, SSTP',
+    address: 'de-nr-sstp.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Germany',
-    City: 'Nuremberg',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'de-nr-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'Germany',
+    city: 'Nuremberg',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'de-nr-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Greece',
-    City: 'Athens',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'gr-at.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Greece',
+    city: 'Athens',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'gr-at.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Hong Kong',
-    City: 'Hong Kong',
-    Protocols: 'L2TP, SSTP',
-    Address: 'hk-sstp.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Hong Kong',
+    city: 'Hong Kong',
+    protocols: 'L2TP, SSTP',
+    address: 'hk-sstp.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'Hong Kong',
-    City: 'Hong Kong',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'hk.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Hong Kong',
+    city: 'Hong Kong',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'hk.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'India',
-    City: 'Pune',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'in-pn-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'India',
+    city: 'Pune',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'in-pn-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Ireland',
-    City: 'Dublin',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ie-db.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Ireland',
+    city: 'Dublin',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ie-db.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Ireland',
-    City: 'Waterford 2',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ie-wt2-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Ireland',
+    city: 'Waterford 2',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ie-wt2-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Italy',
-    City: 'Milan',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'it-ml-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'Italy',
+    city: 'Milan',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'it-ml-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Italy',
-    City: 'Venice',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'it-vn.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Italy',
+    city: 'Venice',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'it-vn.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'Japan',
-    City: 'Tokyo',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'jp-tk-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'Japan',
+    city: 'Tokyo',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'jp-tk-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Kyrgyzstan',
-    City: 'Bishkek',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'kg-sh-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Kyrgyzstan',
+    city: 'Bishkek',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'kg-sh-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Malaysia',
-    City: 'Selangor',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'my-sl.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Malaysia',
+    city: 'Selangor',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'my-sl.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Mexico',
-    City: 'Cabo San Lucas',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'mx-cb.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Mexico',
+    city: 'Cabo San Lucas',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'mx-cb.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'Mexico',
-    City: 'Rosarito',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'mx-rs-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Mexico',
+    city: 'Rosarito',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'mx-rs-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Mozambique',
-    City: 'Maputo',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'mz-mp-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Mozambique',
+    city: 'Maputo',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'mz-mp-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Nepal',
-    City: 'Kathmandu',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'np-kt-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Nepal',
+    city: 'Kathmandu',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'np-kt-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Netherlands',
-    City: 'Amsterdam',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'nl-am2-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Netherlands',
+    city: 'Amsterdam',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'nl-am2-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Netherlands',
-    City: 'Amsterdam',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'nl-am2.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Netherlands',
+    city: 'Amsterdam',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'nl-am2.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'Netherlands',
-    City: 'Amsterdam',
-    Protocols: 'L2TP, SSTP',
-    Address: 'nl-am2-sstp.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Netherlands',
+    city: 'Amsterdam',
+    protocols: 'L2TP, SSTP',
+    address: 'nl-am2-sstp.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'New Zealand',
-    City: 'Auckland',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'nz-ac-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'New Zealand',
+    city: 'Auckland',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'nz-ac-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'New Zealand',
-    City: 'Auckland',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'nz-ac-serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'New Zealand',
+    city: 'Auckland',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'nz-ac-serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Norway',
-    City: 'Oslo',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'no-os.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Norway',
+    city: 'Oslo',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'no-os.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Russia',
-    City: 'Novosibirsk',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ru-nv-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'Russia',
+    city: 'Novosibirsk',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ru-nv-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Saudi Arabia',
-    City: 'Riyadh',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'sa-ry.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Saudi Arabia',
+    city: 'Riyadh',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'sa-ry.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Singapore',
-    City: 'Singapore',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'sg-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'Singapore',
+    city: 'Singapore',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'sg-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Singapore',
-    City: 'Singapore',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'sg2-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'Singapore',
+    city: 'Singapore',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'sg2-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'South Africa',
-    City: 'Johannesburg',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'za-jh-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'South Africa',
+    city: 'Johannesburg',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'za-jh-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'South Korea',
-    City: 'Seoul',
-    Protocols: 'PPTP, OpenVPN',
-    Address: 'kr-sl-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'South Korea',
+    city: 'Seoul',
+    protocols: 'PPTP, OpenVPN',
+    address: 'kr-sl-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Sudan',
-    City: 'Sudan',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'sd.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Sudan',
+    city: 'Sudan',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'sd.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'Spain',
-    City: 'Valencia',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'es-vl-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'Spain',
+    city: 'Valencia',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'es-vl-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Spain',
-    City: 'Valencia',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'es-vl.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Spain',
+    city: 'Valencia',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'es-vl.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Sweden',
-    City: 'Stockholm',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'se-st-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'Sweden',
+    city: 'Stockholm',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'se-st-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'Sweden',
-    City: 'Stockholm',
-    Protocols: 'L2TP, SSTP',
-    Address: 'se-st-sstp.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Sweden',
+    city: 'Stockholm',
+    protocols: 'L2TP, SSTP',
+    address: 'se-st-sstp.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'Switzerland',
-    City: 'Zurich',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ch-zr.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Switzerland',
+    city: 'Zurich',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ch-zr.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Switzerland',
-    City: 'Zurich',
-    Protocols: 'L2TP, SSTP',
-    Address: 'ch-zr-sstp.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Switzerland',
+    city: 'Zurich',
+    protocols: 'L2TP, SSTP',
+    address: 'ch-zr-sstp.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Switzerland',
-    City: 'Zurich',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ch-zr2.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'Switzerland',
+    city: 'Zurich',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ch-zr2.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'Turkey',
-    City: 'Istanbul',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'tr-is.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Turkey',
+    city: 'Istanbul',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'tr-is.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'Turkey',
-    City: 'Istanbul',
-    Protocols: 'L2TP, SSTP',
-    Address: 'tr-is-sstp.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Turkey',
+    city: 'Istanbul',
+    protocols: 'L2TP, SSTP',
+    address: 'tr-is-sstp.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'Ukraine',
-    City: 'Kiev',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'ua-kv.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'Ukraine',
+    city: 'Kiev',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'ua-kv.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'United Kingdom',
-    City: 'Canterbury',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'uk-can.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'United Kingdom',
+    city: 'Canterbury',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'uk-can.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'United Kingdom',
-    City: 'Hull',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'uk-hl-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'United Kingdom',
+    city: 'Hull',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'uk-hl-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'United Kingdom',
-    City: 'London 1',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'uk-lon1-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'United Kingdom',
+    city: 'London 1',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'uk-lon1-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'United Kingdom',
-    City: 'London 1',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'uk-lon1.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'United Kingdom',
+    city: 'London 1',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'uk-lon1.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'United Kingdom',
-    City: 'London 1',
-    Protocols: 'L2TP, SSTP',
-    Address: 'uk-lon1-sstp.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'United Kingdom',
+    city: 'London 1',
+    protocols: 'L2TP, SSTP',
+    address: 'uk-lon1-sstp.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'United States - Center',
-    City: 'Chicago',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-ch.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'United States - Center',
+    city: 'Chicago',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-ch.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'United States',
-    City: 'Delaware',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-dl2.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'United States',
+    city: 'Delaware',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-dl2.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'United States - West',
-    City: 'Los Angeles 1',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-la1.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'United States - West',
+    city: 'Los Angeles 1',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-la1.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'United States - West',
-    City: 'Los Angeles 2',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-la2.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'United States - West',
+    city: 'Los Angeles 2',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-la2.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'United States - West',
-    City: 'Los Angeles 2',
-    Protocols: 'L2TP, SSTP',
-    Address: 'us-la2-sstp.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'United States - West',
+    city: 'Los Angeles 2',
+    protocols: 'L2TP, SSTP',
+    address: 'us-la2-sstp.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'United States - West',
-    City: 'Los Angeles 3',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-la3-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
+    country: 'United States - West',
+    city: 'Los Angeles 3',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-la3-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
   },
   {
-    Country: 'United States - West',
-    City: 'Los Angeles 3',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-la3.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'United States - West',
+    city: 'Los Angeles 3',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-la3.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'United States - West',
-    City: 'Los Angeles 3',
-    Protocols: 'L2TP, SSTP',
-    Address: 'us-la3-sstp.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'United States - West',
+    city: 'Los Angeles 3',
+    protocols: 'L2TP, SSTP',
+    address: 'us-la3-sstp.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'United States - East',
-    City: 'Miami 2',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-mi2.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
+    country: 'United States - East',
+    city: 'Miami 2',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-mi2.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
   },
   {
-    Country: 'United States -',
-    City: 'Minneapolis',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-mn2-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'United States -',
+    city: 'Minneapolis',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-mn2-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   },
   {
-    Country: 'United States - West',
-    City: 'San Jose',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-sj.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
+    country: 'United States - West',
+    city: 'San Jose',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-sj.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
   },
   {
-    Country: 'United States',
-    City: 'San Francisco',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-sf2.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'United States',
-    City: 'Savannah',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-sav.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'United States - West',
-    City: 'Silicon Valley',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-sv.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'United States - East',
-    City: 'Miami',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-mi2.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'United States - East',
-    City: 'New York City',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-nyc.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'United States - East',
-    City: 'New York 1',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-ny1-smart.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'United States - East',
-    City: 'New York 1',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-ny1.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'United States - East',
-    City: 'New York 2',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-ny2.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'United States - East',
-    City: 'New York 2',
-    Protocols: 'L2TP, SSTP',
-    Address: 'us-ny2-sstp.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'United States - East',
-    City: 'Orlando (Florida)',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-or.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'United States - East',
-    City: 'Washington DC',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-wdc.serverlocation.co',
-    P2P: 'No',
-    SmartVPN: 'No'
-  },
-  {
-    Country: 'United States - East',
-    City: 'Washington DC 2',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'us-wdc2-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
-  },
-  {
-    Country: 'Vietnam',
-    City: 'Ho Chi Minh City',
-    Protocols: 'PPTP, L2TP, OpenVPN',
-    Address: 'vn-hc-smart.serverlocation.co',
-    P2P: 'YES',
-    SmartVPN: 'YES'
+    country: 'United States',
+    city: 'San Francisco',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-sf2.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
+  },
+  {
+    country: 'United States',
+    city: 'Savannah',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-sav.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
+  },
+  {
+    country: 'United States - West',
+    city: 'Silicon Valley',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-sv.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
+  },
+  {
+    country: 'United States - East',
+    city: 'Miami',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-mi2.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'No'
+  },
+  {
+    country: 'United States - East',
+    city: 'New York city',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-nyc.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
+  },
+  {
+    country: 'United States - East',
+    city: 'New York 1',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-ny1-smart.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'United States - East',
+    city: 'New York 1',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-ny1.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
+  },
+  {
+    country: 'United States - East',
+    city: 'New York 2',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-ny2.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
+  },
+  {
+    country: 'United States - East',
+    city: 'New York 2',
+    protocols: 'L2TP, SSTP',
+    address: 'us-ny2-sstp.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
+  },
+  {
+    country: 'United States - East',
+    city: 'Orlando (Florida)',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-or.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
+  },
+  {
+    country: 'United States - East',
+    city: 'Washington DC',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-wdc.serverlocation.co',
+    p2p: 'No',
+    smartvpn: 'No'
+  },
+  {
+    country: 'United States - East',
+    city: 'Washington DC 2',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'us-wdc2-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
+  },
+  {
+    country: 'Vietnam',
+    city: 'Ho Chi Minh city',
+    protocols: 'PPTP, L2TP, OpenVPN',
+    address: 'vn-hc-smart.serverlocation.co',
+    p2p: 'YES',
+    smartvpn: 'YES'
   }
 ]
 
